@@ -4,13 +4,30 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  background-color: lightblue;
+}
 .container {
-  border: 2px solid;
-  width: 70%;
+  /* border: 2px solid; */
+  width: 50%;
   margin: 0 auto;
   /* text-align: center; */
+  /* background-image: ; */
 }
 
 .form-group {
+  margin: 1rem 0;
+}
+
+input[type="text"],
+input[type="date"] {
+  border: none;
+  border-bottom: 2px solid;
+  border-color: pink;
+  outline: none;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  padding: 1px 5px;
+  height: 30px;
+  /* width: 100%; */
 }
