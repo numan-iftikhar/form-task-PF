@@ -22,3 +22,21 @@ form.addEventListener("submit", (e) => {
   data.fileName = `${file.value}`;
   localStorage.setItem("formData", JSON.stringify(data));
 });
+
+//new function event to save file
+const input = document.getElementById("upload-file");
+const link = document.getElementById("link");
+let objectURL;
+
+input.addEventListener("change", function () {
+  if (objectURL) {
+    // revoke the old object url to avoid using more memory than needed
+    URL.revokeObjectURL(objectURL);
+  }
+
+  const fil = this.files[0];
+  objectURL = URL.createObjectURL(fil);
+
+  link.download = fil.name; // this name is used when the user downloads the file
+  link.href = objectURL;
+});

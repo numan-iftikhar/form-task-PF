@@ -40,10 +40,28 @@ input[type="date"] {
 
 button[type="submit"] {
   background-color: none;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   background-color: #f35e9a;
   border: none;
   border-radius: 5px;
   color: white;
   cursor: pointer;
+  font-weight: bold;
+}
+button[type="submit"]:hover {
+  background-color: white;
+  color: #f35e9a;
+}
+#link {
+  background-color: white;
+  color: #f35e9a;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#link:hover {
+  background-color: #f35e9a;
+  color: white;
 }
