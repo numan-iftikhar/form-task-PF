@@ -9,6 +9,7 @@ const form = document.querySelector("#form");
 const data = {};
 
 form.addEventListener("submit", (e) => {
+  e.preventDefault();
   // start-end date validation
   if (startDate.value > endDate.value) {
     alert("ERROR: Start date can not be farther than End date!!");
