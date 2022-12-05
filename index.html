@@ -9,25 +9,27 @@
   </head>
   <body>
     <div class="container">
-      <form action="">
+      <form id="form" action="">
+        <!-- todo: add required -->
+
         <div class="form-group">
           <label for="name">Name: </label>
-          <input type="text" name="name" id="name" required />
+          <input type="text" name="name" id="name" />
         </div>
 
         <div class="form-group">
           <label for="dob">DOB: </label>
-          <input type="date" name="dob" id="dob" required />
+          <input type="date" name="dob" id="dob" />
         </div>
 
         <div class="form-group">
           <label for="start-date">Start Date: </label>
-          <input type="date" name="start-date" id="start-date" required />
+          <input type="date" name="start-date" id="start-date" />
         </div>
 
         <div class="form-group">
           <label for="end-date">End Date: </label>
-          <input type="date" name="end-date" id="end-date" required />
+          <input type="date" name="end-date" id="end-date" />
         </div>
 
         <div class="form-group">
@@ -38,12 +40,11 @@
             id="upload-file"
             accept="application/pdf,application/msword,
           application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-            required
           />
         </div>
 
         <div class="form-group">
-          <button type="submit">Submit</button>
+          <button id="submit-btn" type="submit">Submit</button>
         </div>
       </form>
     </div>
