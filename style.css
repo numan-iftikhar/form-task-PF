@@ -5,14 +5,20 @@
   box-sizing: border-box;
 }
 body {
-  background-color: lightblue;
+  background-image: url(https://images.pexels.com/photos/699919/pexels-photo-699919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 .container {
-  /* border: 2px solid; */
-  width: 50%;
-  margin: 0 auto;
-  /* text-align: center; */
-  /* background-image: ; */
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 5px;
+  color: white;
 }
 
 .form-group {
@@ -22,17 +28,22 @@ body {
 input[type="text"],
 input[type="date"] {
   border: none;
-  border-bottom: 2px solid;
-  border-color: pink;
+  border-bottom: 3px solid;
+  border-color: #f35e9a;
   outline: none;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   padding: 1px 5px;
   height: 30px;
-  /* width: 100%; */
+  width: 100%;
 }
 
 button[type="submit"] {
   background-color: none;
   padding: 0.5rem 1rem;
+  background-color: #f35e9a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
 }
