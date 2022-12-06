@@ -10,6 +10,11 @@ const data = {};
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  // name validation
+  let regEx = /^[a-zA-Z]+ [a-zA-Z]+$/;
+  if (!regEx.test(fName)) {
+    alert("Invalid name given.");
+  }
   // start-end date validation
   if (startDate.value > endDate.value) {
     alert("ERROR: Start date can not be farther than End date!!");
