@@ -11,9 +11,9 @@ const data = {};
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   // name validation
-  let regEx = /^[a-zA-Z]+ [a-zA-Z]+$/;
-  if (!regEx.test(fName)) {
-    alert("Invalid name given.");
+  let regEx = /^[a-zA-Z_]+$/;
+  if (!regEx.test(fName.value)) {
+    alert("ERROR: Please! use correct pattern!!");
   }
   // start-end date validation
   if (startDate.value > endDate.value) {
